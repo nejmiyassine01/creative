@@ -1,0 +1,33 @@
+.brand {
+    
+    &_container {
+        display: flex;
+    }
+    
+    &_left {
+        width: 50%;
+    }
+
+    &_right {
+        width: 50%;
+        position: relative;
+
+        & > div {
+            padding: 20px;
+            color: #000;
+            z-index: 20px;
+
+            & h3{
+            }
+
+            & p {
+                padding-top: 20px;
+                color: #000;
+                font-size: 15px;
+                line-height: 1.5;
+                width: 440px;
+            }
+        }
+        
+    }
+}
