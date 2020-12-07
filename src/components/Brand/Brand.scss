@@ -1,28 +1,53 @@
 .brand {
+    position: relative;
+    height: 600px;
+    
+    &::after {
+        content: '';
+        position: absolute;
+        top: -20%;
+        right: 0;
+        width: 60%;
+        height: 140%;
+        background-color: #f94f4f;
+        z-index: -1;
+    }
     
     &_container {
         display: flex;
+        z-index: 100;
     }
     
     &_left {
         width: 50%;
+        padding-left: 80px;
+        padding-top: 120px;
+
+        & h2 {
+            width: 400px;
+            font-weight: 800;
+            font-size: 40px;
+        }
     }
 
     &_right {
         width: 50%;
         position: relative;
+        padding-top: 20px;
+        padding-left: 50px;
 
         & > div {
-            padding: 20px;
+            padding: 40px 20px;
             color: #000;
             z-index: 20px;
 
             & h3{
+                color: #fff;
             }
 
             & p {
                 padding-top: 20px;
-                color: #000;
+                color: #eee;
                 font-size: 15px;
                 line-height: 1.5;
                 width: 440px;

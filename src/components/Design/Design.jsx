@@ -16,7 +16,7 @@ function Design() {
                     <p>
                     &quot;Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.Lorem ipsum is placeholder text commonly used in the graphic, print.&quot;
                     </p>
-                    <button className="design_button">
+                    <button>
                         Schedule a Call
                     </button>
                 </div>
