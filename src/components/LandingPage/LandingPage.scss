@@ -1,12 +1,19 @@
 .landingPage {
-    height: 600px;
     overflow: hidden;
     position: relative;
+
+    @media (min-width: 992px) {
+
+    }
 
     &_image {
         width: 100%;
         height: 600px;
         position: relative;
+
+        @media (max-width: 992px) {
+            height: 400px;
+        }
 
         &::after {
             content: '';
@@ -17,8 +24,15 @@
             height: 100%;
             background: rgb(255,255,255);
             background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%);
+
+            @media (max-width: 992px) {
+                width: 70%;
+                height: 100%;
+                background: transparent;
+            }
+            
         }
-        
+
         & img {
             min-width: 100%;
             height: 100%;
@@ -31,15 +45,31 @@
         left: 10%;
         width: 500px;
         color: #000;
-            
+
+        @media (max-width: 992px) {
+            position: relative;
+            padding: 20px 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
         & h2 {
-            font-size: 60px;   
+            font-size: 60px;  
             font-weight: 800;
+
+            @media (max-width: 992px) {
+                font-size: 50px;  
+            }
         }
 
         & p {
             padding: 20px 0;
             line-height: 1.5;
+
+            @media (max-width: 992px) {
+                font-size: 25px;  
+            }
         }
 
         & button {
