@@ -81,6 +81,10 @@
 .nav {
     background: #F94F4F;
     padding: 30px;
+
+    @media (min-width: 993px) {
+        display: none !important;
+    }
     
     &_hide {
         display: none;
@@ -121,5 +125,6 @@
         &_menu {
             display: block;
         }
+
     }
 }
