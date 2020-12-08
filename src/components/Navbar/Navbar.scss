@@ -1,7 +1,7 @@
 @mixin link {
     color: #f0f0f0;
     padding: 20px;
-    transition: all .3s ease-in-out;
+    transition: all .1s ease;
     
     &:hover {
         color: rgb(255, 255, 255);
@@ -67,6 +67,7 @@
 
     &_menu {
         display: none;
+        font-size: 25px;
     }
 
     &_logo {
@@ -78,11 +79,15 @@
 }
 
 .nav {
-    display: block;
     background: #F94F4F;
+    padding: 30px;
+    
+    &_hide {
+        display: none;
+    }
 
-    & .active {
-        
+    &_show {
+        display: block;
     }
     
     & ul {

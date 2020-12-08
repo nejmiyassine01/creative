@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Navbar.scss'
 import * as Hi from 'react-icons/hi'
 
 function Navbar() {
-    const handleClick = () => {console.log('clicked')}
+    const [menu, setMenu] = useState(false);
+    const handleClick = () => setMenu(!menu);
     
     return (
         <>
@@ -12,9 +13,11 @@ function Navbar() {
                     <div className="navbar_logo">
                         <h3>Creative</h3>
                     </div>
+
                     <div className="navbar_menu" onClick={handleClick}>
                         <Hi.HiMenuAlt3 />
                     </div>
+
                     <ul>
                         <li>
                             <a href="#about">About</a>
@@ -26,7 +29,7 @@ function Navbar() {
                 </div>
             </div>
 
-            <div className="nav active">
+            <div className={menu ? 'nav nav_hide' : 'nav nav_show'}>
                 <ul>
                     <li>
                         <a href="#about">About</a>
