@@ -115,6 +115,7 @@
 
 @media (max-width: 992px) {
     .navbar {
+        height: 50px;
 
         &_container {
             & ul {
@@ -124,6 +125,10 @@
 
         &_menu {
             display: block;
+        }
+
+        & h3 {
+            padding-top: 0;
         }
 
     }
