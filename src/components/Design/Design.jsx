@@ -1,12 +1,20 @@
 import React from 'react'
 import './Design.scss'
 import img2 from '../../static/img-2.jpg'
+import img2M from '../../static/img-2-medium.jpg'
 
 function Design() {
     return (
         <div className="design">
             <div className="design_image">
-                <img src={img2} alt="design" />
+                <picture>
+                    <source srcSet={`${img2M} 1x`} media="(max-width: 992px)" />
+                    <img
+                        className="logo__apple"
+                        srcSet={`${img2} 2x`}
+                        alt="Full Logo" 
+                    />
+                </picture>
             </div>
             <div className="design_container">
                 <div className="design_content container">

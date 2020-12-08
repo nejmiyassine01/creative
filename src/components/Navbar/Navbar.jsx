@@ -29,7 +29,7 @@ function Navbar() {
                 </div>
             </div>
 
-            <div className={menu ? 'nav nav_hide' : 'nav nav_show'}>
+            <div className={menu ? 'nav nav_show' : 'nav nav_hide'}>
                 <ul>
                     <li>
                         <a href="#about">About</a>

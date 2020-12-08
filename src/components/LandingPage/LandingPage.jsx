@@ -1,12 +1,20 @@
 import React from 'react'
 import img1 from '../../static/img-1.jpg'
+import img1M from '../../static/img-1-medium.jpg'
 import './LandingPage.scss'
 
 function LandingPage() {
     return (
         <div className="landingPage">
             <div className="landingPage_image">
-                <img src={img1} alt="landing" />
+                <picture>
+                    <source srcSet={`${img1M} 1x`} media="(max-width: 992px)" />
+                    <img
+                        className="logo__apple"
+                        srcSet={`${img1} 2x`}
+                        alt="Full Logo" 
+                    />
+                </picture>
             </div>
 
             <div className="container landingPage_overlay">
