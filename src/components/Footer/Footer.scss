@@ -32,3 +32,24 @@
         
     }
 }
+
+@media (max-width: 992px) {
+    .footer {
+        padding: 20px 0;
+    
+        &_container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+            & h2 {
+                font-weight: 800;
+                font-size: 40px;
+                width: 400px;
+                text-align: center;
+                padding-bottom: 20px;
+            }
+        }
+    }
+}

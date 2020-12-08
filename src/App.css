@@ -12,29 +12,30 @@ a {
     text-decoration: none;
 }
 
+.container {
+    margin: auto;
+}
+
 @media (max-width: 767px) { 
     .container {
         max-width: 720px;
-        padding: 20px;
-        margin: auto;
+        padding: 5px;
     }
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
+@media (min-width: 768px) and (max-width: 991px) {
     .container {
         max-width: 720px;
-        padding: 20px;
-        margin: auto;
+        padding: 10px;
     }   
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
+@media (min-width: 992px) and (max-width: 1199px) { 
     .container {
         max-width: 960px;
-        padding: 0 20px;
-        margin: auto;
+        padding: 0 15px;
     }
 }
 
@@ -43,6 +44,5 @@ a {
     .container {
         max-width: 1140px;
         padding: 0 20px;
-        margin: auto;
     }
 }

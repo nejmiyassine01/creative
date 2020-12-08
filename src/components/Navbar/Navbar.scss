@@ -26,10 +26,9 @@
 .navbar {
     height: 100px;
     position: relative;
-    display: flex;
-    align-items: center;
-    
-    @media (min-width: 1024px) {
+    overflow: hidden;
+
+    @media (min-width: 993px) {
         &::after {
             content: "";
             background-color: #F94F4F;
@@ -41,10 +40,12 @@
             right: 0;
         }
     }
-
+    
     &_container {
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        height: 100%;
 
         & ul {
             position: relative;
@@ -76,9 +77,13 @@
     }
 }
 
-.active {
-    display: none;
+.nav {
+    display: block;
     background: #F94F4F;
+
+    & .active {
+        
+    }
     
     & ul {
         
@@ -97,5 +102,19 @@
             @include button()
         }
     }
+}
 
+@media (max-width: 992px) {
+    .navbar {
+
+        &_container {
+            & ul {
+                display: none;
+            }
+        }
+
+        &_menu {
+            display: block;
+        }
+    }
 }

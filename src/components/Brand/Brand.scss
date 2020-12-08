@@ -1,18 +1,5 @@
 .brand {
     position: relative;
-    height: 600px;
-    // background-color: #f94f4f;
-    
-    // &::after {
-    //     background-color: #f94f4f;
-    //     content: '';
-    //     position: absolute;
-    //     top: -20%;
-    //     right: 0;
-    //     width: 60%;
-    //     height: 140%;
-    //     z-index: -1;
-    // }
     
     &_container {
         display: flex;
@@ -23,11 +10,8 @@
         width: 40%;
         padding-left: 50px;
         padding-top: 120px;
-
-        @media (min-width: 992px) { 
-            width: 100%;
-        }
-
+        z-index: 20;
+        
         & h2 {
             width: 400px;
             font-weight: 800;
@@ -36,17 +20,22 @@
     }
 
     &_right {
+        padding: 40px 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 60%;
-        height: 600px;
         position: relative;
         background-color: #f94f4f;
 
-        @media (min-width: 992px) { 
-            width: 100%;
+        & span {
+            font-size: 40px;
+            font-weight: 800;
+            color: #fff;
+            opacity: .5;
+            position: absolute;
+            margin: -15px 0 0 0;
         }
 
         & > div {
@@ -66,6 +55,59 @@
                 width: 440px;
             }
         }
+    }
+}
+
+@media (max-width: 991px) {
+    .brand {
+        background-color: #f94f4f;
+        color: #fff;
         
+        &_container {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        &_left {
+            width: 100%;
+            padding-top: 50px;
+            padding-left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            & h2 {
+                font-size: 30px;
+            }
+        }
+    
+        &_right {
+            width: 100%;
+            position: relative;
+            background-color: #f94f4f;
+            padding: 10px 0;
+
+            & > div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                position: relative;
+                text-align: center;
+                padding: 40px 10px;
+
+                & h3{
+                    color: #fff;
+                    width: 100%;
+                }
+
+                & p {
+                    padding-top: 20px;
+                    font-size: 20px;
+                    // text-align: center;
+                    width: 100%;
+                }
+            }
+        }
     }
 }

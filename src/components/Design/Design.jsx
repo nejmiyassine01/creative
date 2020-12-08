@@ -8,8 +8,8 @@ function Design() {
             <div className="design_image">
                 <img src={img2} alt="design" />
             </div>
-            <div className="design_container container">
-                <div className="design_content">
+            <div className="design_container">
+                <div className="design_content container">
                     <h2>
                         <span>Design</span> is strategic.
                     </h2>

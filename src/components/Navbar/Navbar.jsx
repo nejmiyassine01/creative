@@ -3,14 +3,16 @@ import './Navbar.scss'
 import * as Hi from 'react-icons/hi'
 
 function Navbar() {
+    const handleClick = () => {console.log('clicked')}
+    
     return (
         <>
-            <nav className="navbar">
-                <div className="container navbar_container">
+            <div className="navbar">
+                <div className="navbar_container container">
                     <div className="navbar_logo">
                         <h3>Creative</h3>
                     </div>
-                    <div className="navbar_menu">
+                    <div className="navbar_menu" onClick={handleClick}>
                         <Hi.HiMenuAlt3 />
                     </div>
                     <ul>
@@ -22,8 +24,9 @@ function Navbar() {
                         </li> 
                     </ul>
                 </div>
-            </nav>
-            <div className="active">
+            </div>
+
+            <div className="nav active">
                 <ul>
                     <li>
                         <a href="#about">About</a>
